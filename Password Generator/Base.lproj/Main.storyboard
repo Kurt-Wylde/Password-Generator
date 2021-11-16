@@ -5,14 +5,13 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Password Generator View Controller-->
         <scene sceneID="Gj7-tb-Ej9">
             <objects>
-                <viewController id="Vd6-vU-DJk" customClass="PasswordGeneratorViewController" customModule="NewPass" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Vd6-vU-DJk" customClass="PasswordGeneratorViewController" customModule="Password_Generator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ld7-gg-DBf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -67,7 +66,7 @@
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aPz-bR-mTe" customClass="NPAttributeSwitch" customModule="NewPass" customModuleProvider="target">
+                                                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aPz-bR-mTe" customClass="NPAttributeSwitch" customModule="Password_Generator" customModuleProvider="target">
                                                                 <rect key="frame" x="139" y="0.0" width="51" height="31"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="31" id="sbP-Wq-g2m"/>
@@ -91,7 +90,7 @@
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JKo-R9-M9T" customClass="NPAttributeSwitch" customModule="NewPass" customModuleProvider="target">
+                                                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JKo-R9-M9T" customClass="NPAttributeSwitch" customModule="Password_Generator" customModuleProvider="target">
                                                                 <rect key="frame" x="139" y="0.0" width="51" height="31"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="31" id="K0D-rI-PRi"/>
@@ -115,7 +114,7 @@
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gga-6g-qpK" customClass="NPAttributeSwitch" customModule="NewPass" customModuleProvider="target">
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gga-6g-qpK" customClass="NPAttributeSwitch" customModule="Password_Generator" customModuleProvider="target">
                                                                 <rect key="frame" x="139" y="0.0" width="51" height="31"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="31" id="9mr-4U-Yr3"/>
@@ -139,7 +138,7 @@
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GvV-Bp-SHa" customClass="NPAttributeSwitch" customModule="NewPass" customModuleProvider="target">
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GvV-Bp-SHa" customClass="NPAttributeSwitch" customModule="Password_Generator" customModuleProvider="target">
                                                                 <rect key="frame" x="139" y="0.0" width="51" height="31"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="31" id="Rfh-jv-gxT"/>
@@ -184,7 +183,7 @@
                                                     <constraint firstAttribute="height" constant="20.5" id="67d-9i-LtX"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" systemColor="systemRedColor"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -277,9 +276,4 @@
             <point key="canvasLocation" x="33.75" y="31.690140845070424"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>
