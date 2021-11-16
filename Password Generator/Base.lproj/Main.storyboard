@@ -1,24 +1,285 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vd6-vU-DJk">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Password Generator View Controller-->
+        <scene sceneID="Gj7-tb-Ej9">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="Vd6-vU-DJk" customClass="PasswordGeneratorViewController" customModule="NewPass" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ld7-gg-DBf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" verticalHuggingPriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="3yU-B9-oFw" userLabel="Outer Container View">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="jKk-zU-KD9" userLabel="Inner Container View">
+                                        <rect key="frame" x="0.0" y="201" width="414" height="521"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YdR-71-H1z">
+                                                <rect key="frame" x="16" y="20" width="382" height="48"/>
+                                                <subviews>
+                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="doT-cT-Hg7">
+                                                        <rect key="frame" x="0.0" y="48" width="382" height="48"/>
+                                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="1pZ-eJ-ztg">
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="48"/>
+                                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="1pZ-eJ-ztg" secondAttribute="bottom" id="0rv-YN-ILg"/>
+                                                    <constraint firstItem="doT-cT-Hg7" firstAttribute="centerX" secondItem="YdR-71-H1z" secondAttribute="centerX" id="GCU-y2-3No"/>
+                                                    <constraint firstItem="1pZ-eJ-ztg" firstAttribute="leading" secondItem="YdR-71-H1z" secondAttribute="leading" id="PGJ-qw-I1C"/>
+                                                    <constraint firstItem="doT-cT-Hg7" firstAttribute="width" secondItem="YdR-71-H1z" secondAttribute="width" id="QJM-sx-K4L"/>
+                                                    <constraint firstAttribute="height" constant="48" id="ZBL-XA-PaP"/>
+                                                    <constraint firstAttribute="bottom" secondItem="doT-cT-Hg7" secondAttribute="bottom" constant="-48" id="h6H-ml-EMo"/>
+                                                    <constraint firstAttribute="trailing" secondItem="1pZ-eJ-ztg" secondAttribute="trailing" id="j0S-83-40t"/>
+                                                    <constraint firstItem="doT-cT-Hg7" firstAttribute="height" secondItem="YdR-71-H1z" secondAttribute="height" id="nVL-lm-Hdx"/>
+                                                    <constraint firstItem="1pZ-eJ-ztg" firstAttribute="height" secondItem="YdR-71-H1z" secondAttribute="height" id="rdB-B2-Vqa"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="B8T-kR-pfA">
+                                                <rect key="frame" x="113" y="186.5" width="188" height="148"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="JjG-j5-UDN">
+                                                        <rect key="frame" x="0.0" y="0.0" width="188" height="31"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Lowercase Letters" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W7P-HN-Pym">
+                                                                <rect key="frame" x="0.0" y="0.0" width="123" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="31" id="I7b-bh-z9D"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aPz-bR-mTe" customClass="NPAttributeSwitch" customModule="NewPass" customModuleProvider="target">
+                                                                <rect key="frame" x="139" y="0.0" width="51" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="31" id="sbP-Wq-g2m"/>
+                                                                </constraints>
+                                                                <color key="onTintColor" red="0.20000000000000001" green="0.80000000000000004" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <connections>
+                                                                    <action selector="attributeSwitchDidChange:" destination="Vd6-vU-DJk" eventType="valueChanged" id="9Hb-aG-ZKP"/>
+                                                                </connections>
+                                                            </switch>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="4rW-mQ-inP">
+                                                        <rect key="frame" x="0.0" y="39" width="188" height="31"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Uppercase Letters" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U4b-zY-aol">
+                                                                <rect key="frame" x="0.0" y="0.0" width="123" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="31" id="01b-v2-7T9"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JKo-R9-M9T" customClass="NPAttributeSwitch" customModule="NewPass" customModuleProvider="target">
+                                                                <rect key="frame" x="139" y="0.0" width="51" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="31" id="K0D-rI-PRi"/>
+                                                                </constraints>
+                                                                <color key="onTintColor" red="0.20000000000000001" green="0.80000000000000004" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <connections>
+                                                                    <action selector="attributeSwitchDidChange:" destination="Vd6-vU-DJk" eventType="valueChanged" id="TNQ-cD-zwP"/>
+                                                                </connections>
+                                                            </switch>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="1Bu-eD-YpN">
+                                                        <rect key="frame" x="0.0" y="78" width="188" height="31"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Include Numbers" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ita-Mu-YUM">
+                                                                <rect key="frame" x="0.0" y="0.0" width="123" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="31" id="HEF-7j-mIt"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gga-6g-qpK" customClass="NPAttributeSwitch" customModule="NewPass" customModuleProvider="target">
+                                                                <rect key="frame" x="139" y="0.0" width="51" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="31" id="9mr-4U-Yr3"/>
+                                                                </constraints>
+                                                                <color key="onTintColor" red="0.20000000000000001" green="0.80000000000000004" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <connections>
+                                                                    <action selector="attributeSwitchDidChange:" destination="Vd6-vU-DJk" eventType="valueChanged" id="hC4-t7-Gvc"/>
+                                                                </connections>
+                                                            </switch>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="BRi-iz-p15">
+                                                        <rect key="frame" x="0.0" y="117" width="188" height="31"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Include Symbols" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2I-Z3-fpP">
+                                                                <rect key="frame" x="0.0" y="0.0" width="123" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="31" id="JQH-7y-bqi"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GvV-Bp-SHa" customClass="NPAttributeSwitch" customModule="NewPass" customModuleProvider="target">
+                                                                <rect key="frame" x="139" y="0.0" width="51" height="31"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="31" id="Rfh-jv-gxT"/>
+                                                                </constraints>
+                                                                <color key="onTintColor" red="0.20000000000000001" green="0.80000000000000004" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <connections>
+                                                                    <action selector="attributeSwitchDidChange:" destination="Vd6-vU-DJk" eventType="valueChanged" id="SCj-fn-csl"/>
+                                                                </connections>
+                                                            </switch>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="4rW-mQ-inP" firstAttribute="centerX" secondItem="B8T-kR-pfA" secondAttribute="centerX" id="45b-74-tSZ"/>
+                                                    <constraint firstItem="JjG-j5-UDN" firstAttribute="centerX" secondItem="B8T-kR-pfA" secondAttribute="centerX" id="7MC-Cr-EuN"/>
+                                                    <constraint firstItem="BRi-iz-p15" firstAttribute="centerX" secondItem="B8T-kR-pfA" secondAttribute="centerX" id="Uvu-RZ-Byd"/>
+                                                    <constraint firstItem="1Bu-eD-YpN" firstAttribute="centerX" secondItem="B8T-kR-pfA" secondAttribute="centerX" id="Vaz-U9-khN"/>
+                                                </constraints>
+                                            </stackView>
+                                            <slider opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="8" minValue="8" maxValue="32" translatesAutoresizingMaskIntoConstraints="NO" id="cbO-5h-2Og">
+                                                <rect key="frame" x="117" y="467" width="180" height="31"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="176" id="4uw-Ry-RsW"/>
+                                                </constraints>
+                                                <color key="minimumTrackTintColor" red="0.12549019610000001" green="0.7843137255" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="passwordLengthSliderDidMove:" destination="Vd6-vU-DJk" eventType="valueChanged" id="7ME-dF-MH8"/>
+                                                </connections>
+                                            </slider>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Password Length: 10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5s-VY-ULc">
+                                                <rect key="frame" x="127" y="443" width="176" height="16.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="176" id="zEm-ef-xFc"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copied to clipboard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hd7-0Z-npe">
+                                                <rect key="frame" x="132.5" y="98" width="149.5" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20.5" id="67d-9i-LtX"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" systemColor="systemRedColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="cbO-5h-2Og" firstAttribute="centerX" secondItem="jKk-zU-KD9" secondAttribute="centerX" id="4wn-TG-iUo"/>
+                                            <constraint firstItem="D5s-VY-ULc" firstAttribute="leading" secondItem="cbO-5h-2Og" secondAttribute="leading" constant="8" id="64J-PV-w6d"/>
+                                            <constraint firstAttribute="bottom" secondItem="cbO-5h-2Og" secondAttribute="bottom" constant="24" id="E9j-4F-qah"/>
+                                            <constraint firstAttribute="bottom" secondItem="cbO-5h-2Og" secondAttribute="bottom" priority="750" constant="43.5" id="Jxa-yE-2oD"/>
+                                            <constraint firstAttribute="trailing" secondItem="YdR-71-H1z" secondAttribute="trailing" constant="16" id="N1x-eQ-mIX"/>
+                                            <constraint firstItem="cbO-5h-2Og" firstAttribute="top" secondItem="D5s-VY-ULc" secondAttribute="bottom" constant="7.6666666666666856" id="O6a-dp-vs4"/>
+                                            <constraint firstItem="B8T-kR-pfA" firstAttribute="centerY" secondItem="jKk-zU-KD9" secondAttribute="centerY" id="PVk-cC-tOZ"/>
+                                            <constraint firstItem="B8T-kR-pfA" firstAttribute="centerX" secondItem="jKk-zU-KD9" secondAttribute="centerX" id="TWZ-cW-ed9"/>
+                                            <constraint firstItem="YdR-71-H1z" firstAttribute="leading" secondItem="jKk-zU-KD9" secondAttribute="leading" constant="16" id="c9R-Sg-6Oj"/>
+                                            <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="cbO-5h-2Og" secondAttribute="bottom" constant="43.333333333333258" id="i4n-by-B9x"/>
+                                            <constraint firstItem="hd7-0Z-npe" firstAttribute="top" secondItem="YdR-71-H1z" secondAttribute="bottom" constant="30" id="l4j-I1-rNB"/>
+                                            <constraint firstItem="B8T-kR-pfA" firstAttribute="top" secondItem="hd7-0Z-npe" secondAttribute="bottom" constant="68" id="ovy-8S-q6s"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="D5s-VY-ULc" secondAttribute="trailing" constant="20" symbolic="YES" id="qtW-43-cAP"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="356" id="ujr-db-CWo"/>
+                                            <constraint firstItem="YdR-71-H1z" firstAttribute="top" secondItem="jKk-zU-KD9" secondAttribute="top" constant="20" id="yEL-Sk-qgx"/>
+                                            <constraint firstItem="hd7-0Z-npe" firstAttribute="centerX" secondItem="YdR-71-H1z" secondAttribute="centerX" id="yLv-i4-5YB"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SNv-a8-zaN">
+                                        <rect key="frame" x="20" y="730" width="374" height="48"/>
+                                        <color key="backgroundColor" red="0.20000000000000001" green="0.80000000000000004" blue="0.40000000000000002" alpha="0.79591181509999998" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="O7C-19-Vj6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="26"/>
+                                        <state key="normal" title="Generate">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="generatePasswordTouchBegan:" destination="Vd6-vU-DJk" eventType="touchDown" id="bKD-zF-fR3"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Generate Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVH-y8-4R3">
+                                        <rect key="frame" x="84" y="24" width="246" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="07p-K0-hFJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.19215686269999999" green="0.19215686269999999" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="SNv-a8-zaN" secondAttribute="bottom" constant="40" id="6UU-8i-6ZY"/>
+                                    <constraint firstItem="zVH-y8-4R3" firstAttribute="centerX" secondItem="3yU-B9-oFw" secondAttribute="centerX" id="7BL-MG-5RF"/>
+                                    <constraint firstAttribute="trailing" secondItem="SNv-a8-zaN" secondAttribute="trailing" constant="20" id="7Fj-x3-2FX"/>
+                                    <constraint firstItem="jKk-zU-KD9" firstAttribute="top" relation="lessThanOrEqual" secondItem="zVH-y8-4R3" secondAttribute="bottom" priority="749" constant="149.5" id="8jJ-rC-1Qc"/>
+                                    <constraint firstItem="SNv-a8-zaN" firstAttribute="top" secondItem="jKk-zU-KD9" secondAttribute="bottom" constant="8" id="HZd-Gn-XqW"/>
+                                    <constraint firstItem="jKk-zU-KD9" firstAttribute="top" secondItem="zVH-y8-4R3" secondAttribute="bottom" priority="999" constant="149.66666666666666" id="LCD-HU-d0z"/>
+                                    <constraint firstItem="zVH-y8-4R3" firstAttribute="top" secondItem="3yU-B9-oFw" secondAttribute="top" constant="24" id="OUX-dz-KlX"/>
+                                    <constraint firstItem="SNv-a8-zaN" firstAttribute="leading" secondItem="3yU-B9-oFw" secondAttribute="leading" constant="20" id="ULC-D2-CID"/>
+                                    <constraint firstItem="jKk-zU-KD9" firstAttribute="leading" secondItem="3yU-B9-oFw" secondAttribute="leading" id="kmV-ws-Lxq"/>
+                                    <constraint firstAttribute="trailing" secondItem="jKk-zU-KD9" secondAttribute="trailing" id="mwf-Cj-bAp"/>
+                                    <constraint firstItem="jKk-zU-KD9" firstAttribute="top" relation="greaterThanOrEqual" secondItem="zVH-y8-4R3" secondAttribute="bottom" priority="750" constant="24" id="pSL-sn-8th"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aUg-D3-8zy"/>
+                        <color key="backgroundColor" red="0.1931143022" green="0.1921813829" blue="0.19404722150000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="3yU-B9-oFw" firstAttribute="trailing" secondItem="aUg-D3-8zy" secondAttribute="trailing" id="7gb-gp-rft"/>
+                            <constraint firstItem="3yU-B9-oFw" firstAttribute="leading" secondItem="aUg-D3-8zy" secondAttribute="leading" id="J3z-Vu-wpi"/>
+                            <constraint firstItem="aUg-D3-8zy" firstAttribute="bottom" secondItem="3yU-B9-oFw" secondAttribute="bottom" id="bHe-dK-uqC"/>
+                            <constraint firstItem="3yU-B9-oFw" firstAttribute="top" secondItem="aUg-D3-8zy" secondAttribute="top" id="cEx-gU-Ohh"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="copiedLabel" destination="hd7-0Z-npe" id="Th1-zV-P09"/>
+                        <outlet property="generatePasswordButton" destination="SNv-a8-zaN" id="fU5-Zr-TAU"/>
+                        <outlet property="lowercaseLetterSwitch" destination="aPz-bR-mTe" id="lml-kT-NqH"/>
+                        <outlet property="numberSwitch" destination="Gga-6g-qpK" id="SiL-jc-gG3"/>
+                        <outlet property="passwordFadeInLabel" destination="doT-cT-Hg7" id="eCW-kI-CZE"/>
+                        <outlet property="passwordFadeInLabelBottomConstraint" destination="h6H-ml-EMo" id="n99-Lj-6DM"/>
+                        <outlet property="passwordFadeOutLabel" destination="1pZ-eJ-ztg" id="8Ys-bh-z0q"/>
+                        <outlet property="passwordFadeOutLabelBottomConstraint" destination="0rv-YN-ILg" id="dsm-u6-dvc"/>
+                        <outlet property="passwordLabelViewContainer" destination="YdR-71-H1z" id="pDe-LA-aYc"/>
+                        <outlet property="passwordLengthLabel" destination="D5s-VY-ULc" id="U1P-Lc-H1n"/>
+                        <outlet property="passwordLengthSlider" destination="cbO-5h-2Og" id="8tP-HG-7g1"/>
+                        <outlet property="symbolSwitch" destination="GvV-Bp-SHa" id="Ddh-RI-JNT"/>
+                        <outlet property="uppercaseLetterSwitch" destination="JKo-R9-M9T" id="5p8-un-kuS"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UCE-VR-L9w" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="33.75" y="31.690140845070424"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

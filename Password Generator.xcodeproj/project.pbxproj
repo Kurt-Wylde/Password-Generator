@@ -9,21 +9,47 @@
 /* Begin PBXBuildFile section */
 		F859D0052742AC5F00F3D9C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859D0042742AC5F00F3D9C9 /* AppDelegate.swift */; };
 		F859D0072742AC5F00F3D9C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859D0062742AC5F00F3D9C9 /* SceneDelegate.swift */; };
-		F859D0092742AC5F00F3D9C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859D0082742AC5F00F3D9C9 /* ViewController.swift */; };
+		F859D0092742AC5F00F3D9C9 /* PasswordGeneratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859D0082742AC5F00F3D9C9 /* PasswordGeneratorViewController.swift */; };
 		F859D00C2742AC5F00F3D9C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F859D00A2742AC5F00F3D9C9 /* Main.storyboard */; };
 		F859D00E2742AC6100F3D9C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F859D00D2742AC6100F3D9C9 /* Assets.xcassets */; };
 		F859D0112742AC6100F3D9C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F859D00F2742AC6100F3D9C9 /* LaunchScreen.storyboard */; };
+		F859D01B2742C37100F3D9C9 /* NPAttributeSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859D01A2742C37100F3D9C9 /* NPAttributeSwitch.swift */; };
+		F859D0202742C3C800F3D9C9 /* NPTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859D01F2742C3C800F3D9C9 /* NPTitleLabel.swift */; };
+		F859D0222742C3EF00F3D9C9 /* NPBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859D0212742C3EF00F3D9C9 /* NPBodyLabel.swift */; };
+		F859D0242742C41F00F3D9C9 /* NPButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859D0232742C41F00F3D9C9 /* NPButton.swift */; };
+		F859D0262742C44F00F3D9C9 /* NPAlertContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859D0252742C44F00F3D9C9 /* NPAlertContainerView.swift */; };
+		F859D0282742C49A00F3D9C9 /* PasswordGeneratorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859D0272742C49A00F3D9C9 /* PasswordGeneratorViewModel.swift */; };
+		F859D02B2742C55D00F3D9C9 /* PasswordAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859D02A2742C55D00F3D9C9 /* PasswordAttribute.swift */; };
+		F859D02D2742C57C00F3D9C9 /* PasswordBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859D02C2742C57C00F3D9C9 /* PasswordBuilder.swift */; };
+		F859D0302742C63900F3D9C9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859D02F2742C63900F3D9C9 /* Constants.swift */; };
+		F859D0322742C65000F3D9C9 /* HapticEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859D0312742C65000F3D9C9 /* HapticEngine.swift */; };
+		F859D0352742C76800F3D9C9 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859D0342742C76800F3D9C9 /* UIView+Extensions.swift */; };
+		F859D0372742C78900F3D9C9 /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859D0362742C78900F3D9C9 /* UIFont+Extensions.swift */; };
+		F859D0392742C7D200F3D9C9 /* NPAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859D0382742C7D200F3D9C9 /* NPAlertViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F859D0012742AC5F00F3D9C9 /* Password Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Password Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F859D0042742AC5F00F3D9C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F859D0062742AC5F00F3D9C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F859D0082742AC5F00F3D9C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F859D0082742AC5F00F3D9C9 /* PasswordGeneratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordGeneratorViewController.swift; sourceTree = "<group>"; };
 		F859D00B2742AC5F00F3D9C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F859D00D2742AC6100F3D9C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F859D0102742AC6100F3D9C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F859D0122742AC6100F3D9C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F859D01A2742C37100F3D9C9 /* NPAttributeSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPAttributeSwitch.swift; sourceTree = "<group>"; };
+		F859D01F2742C3C800F3D9C9 /* NPTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPTitleLabel.swift; sourceTree = "<group>"; };
+		F859D0212742C3EF00F3D9C9 /* NPBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPBodyLabel.swift; sourceTree = "<group>"; };
+		F859D0232742C41F00F3D9C9 /* NPButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPButton.swift; sourceTree = "<group>"; };
+		F859D0252742C44F00F3D9C9 /* NPAlertContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPAlertContainerView.swift; sourceTree = "<group>"; };
+		F859D0272742C49A00F3D9C9 /* PasswordGeneratorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordGeneratorViewModel.swift; sourceTree = "<group>"; };
+		F859D02A2742C55D00F3D9C9 /* PasswordAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordAttribute.swift; sourceTree = "<group>"; };
+		F859D02C2742C57C00F3D9C9 /* PasswordBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordBuilder.swift; sourceTree = "<group>"; };
+		F859D02F2742C63900F3D9C9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F859D0312742C65000F3D9C9 /* HapticEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticEngine.swift; sourceTree = "<group>"; };
+		F859D0342742C76800F3D9C9 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		F859D0362742C78900F3D9C9 /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
+		F859D0382742C7D200F3D9C9 /* NPAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPAlertViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +82,92 @@
 		F859D0032742AC5F00F3D9C9 /* Password Generator */ = {
 			isa = PBXGroup;
 			children = (
+				F859D0332742C74D00F3D9C9 /* Extensions */,
+				F859D02E2742C62C00F3D9C9 /* Utils */,
+				F859D0292742C55200F3D9C9 /* Models */,
+				F859D0182742C33C00F3D9C9 /* Custom Views */,
 				F859D0042742AC5F00F3D9C9 /* AppDelegate.swift */,
 				F859D0062742AC5F00F3D9C9 /* SceneDelegate.swift */,
-				F859D0082742AC5F00F3D9C9 /* ViewController.swift */,
+				F859D0082742AC5F00F3D9C9 /* PasswordGeneratorViewController.swift */,
 				F859D00A2742AC5F00F3D9C9 /* Main.storyboard */,
 				F859D00D2742AC6100F3D9C9 /* Assets.xcassets */,
 				F859D00F2742AC6100F3D9C9 /* LaunchScreen.storyboard */,
 				F859D0122742AC6100F3D9C9 /* Info.plist */,
+				F859D0272742C49A00F3D9C9 /* PasswordGeneratorViewModel.swift */,
+				F859D0382742C7D200F3D9C9 /* NPAlertViewController.swift */,
 			);
 			path = "Password Generator";
+			sourceTree = "<group>";
+		};
+		F859D0182742C33C00F3D9C9 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				F859D01E2742C3A500F3D9C9 /* Views */,
+				F859D01D2742C39800F3D9C9 /* Labels */,
+				F859D01C2742C39200F3D9C9 /* Buttons */,
+				F859D0192742C34D00F3D9C9 /* Switches */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		F859D0192742C34D00F3D9C9 /* Switches */ = {
+			isa = PBXGroup;
+			children = (
+				F859D01A2742C37100F3D9C9 /* NPAttributeSwitch.swift */,
+			);
+			path = Switches;
+			sourceTree = "<group>";
+		};
+		F859D01C2742C39200F3D9C9 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				F859D0232742C41F00F3D9C9 /* NPButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		F859D01D2742C39800F3D9C9 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				F859D01F2742C3C800F3D9C9 /* NPTitleLabel.swift */,
+				F859D0212742C3EF00F3D9C9 /* NPBodyLabel.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		F859D01E2742C3A500F3D9C9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F859D0252742C44F00F3D9C9 /* NPAlertContainerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F859D0292742C55200F3D9C9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F859D02A2742C55D00F3D9C9 /* PasswordAttribute.swift */,
+				F859D02C2742C57C00F3D9C9 /* PasswordBuilder.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F859D02E2742C62C00F3D9C9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F859D02F2742C63900F3D9C9 /* Constants.swift */,
+				F859D0312742C65000F3D9C9 /* HapticEngine.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F859D0332742C74D00F3D9C9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F859D0342742C76800F3D9C9 /* UIView+Extensions.swift */,
+				F859D0362742C78900F3D9C9 /* UIFont+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +241,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F859D0092742AC5F00F3D9C9 /* ViewController.swift in Sources */,
+				F859D0352742C76800F3D9C9 /* UIView+Extensions.swift in Sources */,
+				F859D0092742AC5F00F3D9C9 /* PasswordGeneratorViewController.swift in Sources */,
+				F859D0262742C44F00F3D9C9 /* NPAlertContainerView.swift in Sources */,
 				F859D0052742AC5F00F3D9C9 /* AppDelegate.swift in Sources */,
+				F859D0242742C41F00F3D9C9 /* NPButton.swift in Sources */,
+				F859D02D2742C57C00F3D9C9 /* PasswordBuilder.swift in Sources */,
+				F859D0322742C65000F3D9C9 /* HapticEngine.swift in Sources */,
+				F859D0222742C3EF00F3D9C9 /* NPBodyLabel.swift in Sources */,
+				F859D01B2742C37100F3D9C9 /* NPAttributeSwitch.swift in Sources */,
+				F859D0202742C3C800F3D9C9 /* NPTitleLabel.swift in Sources */,
+				F859D02B2742C55D00F3D9C9 /* PasswordAttribute.swift in Sources */,
+				F859D0392742C7D200F3D9C9 /* NPAlertViewController.swift in Sources */,
+				F859D0282742C49A00F3D9C9 /* PasswordGeneratorViewModel.swift in Sources */,
 				F859D0072742AC5F00F3D9C9 /* SceneDelegate.swift in Sources */,
+				F859D0372742C78900F3D9C9 /* UIFont+Extensions.swift in Sources */,
+				F859D0302742C63900F3D9C9 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +333,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,7 +388,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -295,8 +411,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +424,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -323,8 +441,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,7 +454,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
